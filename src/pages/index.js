@@ -4,6 +4,8 @@ import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import PostLink from "../components/post-link"
 import HeroHeader from "../components/heroHeader"
+import Banner from "../components/banner"
+import CommunityPosts from "../components/communityPosts"
 
 const IndexPage = ({
   data: {
@@ -23,10 +25,12 @@ const IndexPage = ({
         <meta name="description" content={site.siteMetadata.description} />
       </Helmet>
       <HeroHeader/>
-      <h2>Blog Posts &darr;</h2>
+      <h2 style={{textAlign: "center"}}>Recent stories from our members</h2>
       <div className="grids">
         {Posts}
       </div>
+      <Banner />
+      <CommunityPosts />
     </Layout>
   )
 }

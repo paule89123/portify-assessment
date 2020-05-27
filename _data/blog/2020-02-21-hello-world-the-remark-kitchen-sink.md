@@ -1,9 +1,10 @@
 ---
 template: BlogPost
 path: /remark-kitchen-sink
-date: 2020-02-21T12:12:25.364Z
-title: 'Hello World: The remark Kitchen Sink'
+date: 2020-04-21T12:12:25.364Z
+title: 'On the Road to Financial Freedom: Catching up with Francesca'
 thumbnail: /assets/image-6.jpg
+metaDescription: df sdf df
 ---
 # h1 Heading 8-)
 
