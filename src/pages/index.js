@@ -21,11 +21,18 @@ const IndexPage = ({
   return (
     <Layout>
       <Helmet>
-        <title>{site.siteMetadata.title}</title>
-        <meta name="description" content={site.siteMetadata.description} />
+        <title>Portify</title>
+        <meta name="description" content="Credit score building and interest-free loans" />
       </Helmet>
-      <HeroHeader/>
-      <h2 style={{textAlign: "center"}}>Recent stories from our members</h2>
+      
+      <div style={{display: "flex", flexWrap: "wrap", flexDirection: "column", justifyContent: "center", textAlign: "center", width: "100%"}}>
+        
+        <div style={{width: "100%"}}><iframe width="560" height="315" src="https://www.youtube.com/embed/uJiGGd5XkX4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+        <HeroHeader />
+      </div>
+
+      <h2>Recent stories from our members</h2>
       <div className="grids">
         {Posts}
       </div>

@@ -12,7 +12,7 @@ export default function Template({
   return (
     <Layout>
       <Helmet>
-        <title>{frontmatter.title} | {siteMetadata.title}</title>
+        <title>Portify</title>
         <meta name="description" content={frontmatter.metaDescription} />
       </Helmet>
       <div className="blog-post-container">
@@ -20,7 +20,7 @@ export default function Template({
           
           {!frontmatter.thumbnail && (
             <div className="post-thumbnail">
-              <h1 className="post-title">{frontmatter.title}</h1>
+              <h1 className="post-title">Portify</h1>
               <div className="post-meta">{frontmatter.date}</div>
             </div>
           )}
