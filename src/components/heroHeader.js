@@ -33,7 +33,7 @@ export default () => (
           <img alt="apps" style={{width: 370, marginBottom: 12}} src={apps} />
         </div>
 
-        <input aria-label="Enter phone number" style={{width: 190, background: "none", color: "black", border: "2px dashed rgba(0,0,0,0.5)", boxShadow: "none"}} className="button -primary" placeholder="Enter your mobile number"/>
+        <input aria-label="Enter phone number" style={{width: 190, background: "none", color: "black", border: "2px dashed rgba(0,0,0,0.5)", boxShadow: "none", marginBottom: "16px"}} className="button -primary" placeholder="Enter your mobile number"/>
         <Link to='' className="button -primary">Get download link</Link>
       </div>
     )}

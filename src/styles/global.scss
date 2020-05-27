@@ -305,6 +305,11 @@ and (min-width: 768px) {
 .grids {
   grid-template-columns: 1fr 1fr;
 }
+.banner-inner-element {
+    padding: 0px 36px;
+    width: 50%;
+    text-align: center;
+}
 }
 @media only screen 
   and (min-width: 1024px) {
@@ -416,3 +421,17 @@ body.light {
 .invisible {
   opacity: 0;
 }
+
+@media only screen 
+and (max-width: 768px) {
+  .banner {
+    flex-wrap: wrap;
+  }
+  .banner-inner-element {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+
