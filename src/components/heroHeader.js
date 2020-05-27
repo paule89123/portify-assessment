@@ -26,15 +26,14 @@ export default () => (
 
         <div 
           className="primary-content"
-
           dangerouslySetInnerHTML={{ __html: "Our members have supported each other with £253162 in financial protections so far"}}
         />
 
         <div style={{width: "100%"}}>
-          <img style={{width: 370, marginBottom: 12}} src={apps} />
+          <img alt="apps" style={{width: 370, marginBottom: 12}} src={apps} />
         </div>
 
-        <input style={{width: 190, background: "none", color: "black", border: "2px dashed rgba(0,0,0,0.5)", boxShadow: "none"}} className="button -primary" placeholder="Enter your mobile number"/>
+        <input aria-label="Enter phone number" style={{width: 190, background: "none", color: "black", border: "2px dashed rgba(0,0,0,0.5)", boxShadow: "none"}} className="button -primary" placeholder="Enter your mobile number"/>
         <Link to='' className="button -primary">Get download link</Link>
       </div>
     )}

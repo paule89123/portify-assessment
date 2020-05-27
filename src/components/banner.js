@@ -26,7 +26,7 @@ export default () => {
 
           }}>
               
-              <img style={{filter: "invert(1)", width: 40, marginRight: 16}} src={soundIcon} />
+              <img alt="" style={{filter: "invert(1)", width: 40, marginRight: 16}} src={soundIcon} />
               The Modern WorkTech
         </div>
         <div

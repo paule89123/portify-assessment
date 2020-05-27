@@ -47,7 +47,7 @@ const IndexPage = ({
       
       <div style={{display: "flex", flexWrap: "wrap", flexDirection: "column", justifyContent: "center", textAlign: "center", width: "100%"}}>
         
-        <div style={{width: "100%"}}><iframe width="560" height="315" src="https://www.youtube.com/embed/uJiGGd5XkX4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div style={{width: "100%"}}><iframe title="Portify" width="560" height="315" src="https://www.youtube.com/embed/uJiGGd5XkX4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
         <HeroHeader />
       </div>
