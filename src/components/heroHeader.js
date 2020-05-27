@@ -24,6 +24,12 @@ export default () => (
           dangerouslySetInnerHTML={{ __html: "Welcome to a community of over 20,000 people who are committing <br> to one small step each month to achieve their financial dreams"}}
         />
 
+        <div 
+          className="primary-content"
+
+          dangerouslySetInnerHTML={{ __html: "Our members have supported each other with £253162 in financial protections so far"}}
+        />
+
         <div style={{width: "100%"}}>
           <img style={{width: 370, marginBottom: 12}} src={apps} />
         </div>

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby'
 import Layout from "../components/layout"
@@ -6,6 +6,7 @@ import PostLink from "../components/post-link"
 import HeroHeader from "../components/heroHeader"
 import Banner from "../components/banner"
 import CommunityPosts from "../components/communityPosts"
+import $ from 'jquery'
 
 const IndexPage = ({
   data: {
@@ -13,6 +14,25 @@ const IndexPage = ({
     allMarkdownRemark: { edges },
   },
 }) => {
+
+  useEffect(() => {
+        document.addEventListener('scroll', scrollEffect);
+        return () => document.removeEventListener('scroll', scrollEffect);
+    }, [])
+
+    function scrollEffect() {
+        let windowTop = $(window).scrollTop();
+        let scrollZone1 = $('.fade1').position().top - 560;
+        let scrollZone2 = $('.fade2').position().top - 560;
+        if (scrollZone1 < windowTop) {
+            $('.fade1').addClass('visible');
+            $('.fade1').removeClass('invisible');
+        }
+        if (scrollZone2 < windowTop) {
+            $('.fade2').addClass('visible');
+            $('.fade2').removeClass('invisible');
+        }
+  }
 
   const Posts = edges
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
@@ -33,11 +53,13 @@ const IndexPage = ({
       </div>
 
       <h2>Recent stories from our members</h2>
-      <div className="grids">
+      <div className="grids fade1 invisible">
         {Posts}
       </div>
       <Banner />
+      <div className="fade2 invisible">
       <CommunityPosts />
+      </div>
     </Layout>
   )
 }

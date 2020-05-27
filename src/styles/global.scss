@@ -407,3 +407,12 @@ body.light {
     top: 8px;
     left: 2px
 }
+.fade1, .fade2 {
+  transition: 2s opacity ease;
+}
+.visible {
+  opacity: 1;
+}
+.invisible {
+  opacity: 0;
+}

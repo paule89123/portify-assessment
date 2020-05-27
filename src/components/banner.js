@@ -33,7 +33,7 @@ export default () => {
           style={{
             width: "50%",
             textAlign: "center",
-
+            padding: "0px 36px"
           }}>
               Tune in to our weekly podcast to listen to the stories, struggles, views and faily lives of modern workers.
               <br /><br />

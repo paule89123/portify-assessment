@@ -4,6 +4,7 @@ import styled from '@emotion/styled'
 
 const Container = styled.div`
   display: flex;
+  flex-wrap: wrap;
 `
 
 const LeftColumn = styled.div`
@@ -33,6 +34,7 @@ const Subtitle = styled.h3`
 
 const Description = styled.p`
   font-size: 0.8rem;
+  word-wrap: wrap;
 `
 
 export default () => {
